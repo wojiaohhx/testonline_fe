@@ -5,26 +5,20 @@ angular
         'ngCookies',
         'ngResource',
         'ngSanitize',
-        'ngRoute'
+        'ui.router'
     ])
-    .config(function ($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/welcome.html',
-            })
-            .when('/dashboard', {
-                tempalteUrl: 'views/dashboard.html',
-            })
-            $locationProvider.html5Mode(true);
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/");
+        $stateProvider
+        .state('welcome', {
+            url: "/",
+            templateUrl: "views/welcome.html"
+        })
+        .state('dashboard', {
+            url: "/dashboard",
+            templateUrl: "views/dashboard.html",
+        })
     })
     .run(function ($rootScope) {
-        // $('#nav-profile').popover({
-        //     content: '<b>'
-        // });
-        // $rootScope.show_profile_menu = function(target){
-        //     $(target).popover('show');
-        // }
-        // $(document).click(function(){
-        //     $('#nav-profile').popover('hide');
-        // });
+        
     });

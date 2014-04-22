@@ -16,6 +16,9 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/welcome.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/dashboard.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
     <!-- endbuild -->
   </head>
   <body ng-app="testonlineApp">
@@ -24,25 +27,44 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Test Online</a>
+        </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <ul class="nav navbar-nav">
+          <li class="active"><a ng-href="dashboard"/>Dashboard</a></li>
+        </ul>
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <div id="nav-profile" class="dropdown nav-profile">
+            <div data-toggle="dropdown" class="dropdown-title">黄海笑</div>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">设置</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">退出</a></li>
+            </ul>
+          </div>
 
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <div class="container" ng-view></div>
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
     <!-- build:js scripts/vendor.js -->
+
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -51,12 +73,14 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/highcharts/highcharts.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/welcomeCtrl.js"></script>
+        <script src="scripts/controllers/dashboardCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

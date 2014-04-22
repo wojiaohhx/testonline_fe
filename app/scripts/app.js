@@ -7,13 +7,24 @@ angular
         'ngSanitize',
         'ngRoute'
     ])
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
+                templateUrl: 'views/welcome.html',
             })
-            .otherwise({
-                redirectTo: '/'
-            });
+            .when('/dashboard', {
+                tempalteUrl: 'views/dashboard.html',
+            })
+            $locationProvider.html5Mode(true);
+    })
+    .run(function ($rootScope) {
+        // $('#nav-profile').popover({
+        //     content: '<b>'
+        // });
+        // $rootScope.show_profile_menu = function(target){
+        //     $(target).popover('show');
+        // }
+        // $(document).click(function(){
+        //     $('#nav-profile').popover('hide');
+        // });
     });

@@ -1,0 +1,60 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\000031}}
+.welcome-module {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\000033}}
+.welcome-module .welcome-title {
+  margin-top: 50px;
+  font-size: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\000037}}
+.welcome-module .welcome-subtitle {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\0000310}}
+.welcome-module .welcome-enter {
+  background-color: #ffffff;
+  border: solid 1px #2f7ed8;
+  color: #666666;
+  width: 400px;
+  height: 100px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 100px;
+  font-size: 30px;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\0000326}}
+.welcome-module .welcome-enter:hover {
+  color: #ffffff;
+  background-color: #2f7ed8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\0000331}}
+.welcome-module .circle-feature-container {
+  margin-top: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\0000333}}
+.welcome-module .circle-feature-container .circle-feature {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  border: solid 1px #999;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/welcome\.scss}line{font-family:\0000346}}
+.welcome-module .circle-feature-container .circle-feature:hover {
+  color: #ffffff;
+  background-color: #000000;
+}

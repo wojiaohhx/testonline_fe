@@ -1,0 +1,15 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/dashboard\.scss}line{font-family:\000032}}
+.ability-content .table {
+  border-top: solid 1px #bbb;
+  border-bottom: solid 1px #bbb;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/dashboard\.scss}line{font-family:\000039}}
+.self-diagnose .table {
+  border-top: solid 1px #bbb;
+  border-bottom: solid 1px #bbb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/abruzzi\/Public\/testonline_fe\/app\/styles\/dashboard\.scss}line{font-family:\0000312}}
+.self-diagnose .table .progress {
+  margin-bottom: 0px;
+}
